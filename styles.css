@@ -1,0 +1,192 @@
+/*///////////////////////////////////////*/
+/* BODY */
+/*///////////////////////////////////////*/
+body {
+    font-family: Dubai light, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+/*///////////////////////////////////////*/
+/* HEADER */
+/*///////////////////////////////////////*/
+
+header{
+    background-color: #ddd;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    padding: 1px 3em 1px 2em;
+}
+header h1 {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    padding-left: 1em;
+}
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+header nav ul li a:hover {
+    background-color: #555;
+    color: whitesmoke
+}
+header nav ul li {
+	display: inline;
+}
+header nav ul {
+/*    position: sticky;*/
+	list-style-type: none;
+	padding: 0 1em;
+}
+
+/*///////////////////////////////////////*/
+/* MAIN */
+/*///////////////////////////////////////*/
+
+main {
+    padding: 2px 3em 2em 3.5em;
+}
+main div {
+    display: inline;
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+}
+main div img {
+    width: 300px;
+    height: 303px;
+    padding: 0 1em 0 2em;
+    float: right;
+}
+main section ul {
+    list-style-type: circle;
+    font-size:x-large;
+    padding: 0 1em;
+    }
+main section ol {
+    font-size:x-large;
+    padding: 0 1em;
+}
+    h2 {
+    font-size:xx-large;
+    padding: 0
+}
+p {
+    text-align: justify;
+    font-size:x-large;
+    padding: 0 20px 0 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    width: 16.66%;
+    height: 10px;
+    padding: 0;
+    text-align: center;
+}
+thead {
+    font-size: large;
+}
+tbody tr td ul {
+    list-style-type: none;
+    font-size: medium;
+}
+th {
+    background-color:#ddd;
+}
+
+/*///////////////////////////////////////*/
+/* FOOTER */
+/*///////////////////////////////////////*/
+
+footer {
+    background-color: #ddd;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 3em 1px 3em;
+}
+footer h2 { 
+    margin: 0;
+}
+footer h4 {
+    margin: 0;
+}
+footer div {
+    display: flex; /* Hace que los elementos hijos se dispongan en línea */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+}
+footer div nav ul li a img {
+    width: 40px;
+    height: 40px;
+    padding: 0 0 0 0.25em;
+}
+#SocialMedia ul li {
+	display: inline;
+}
+#SocialMedia ul {
+	list-style-type: none;
+	padding: 0;
+}
+#FooterMenu {
+    float: right
+}
+#FooterMenu ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 0.2em 1em;
+}
+#FooterMenu ul li a:hover {
+    background-color: #555;
+    color: whitesmoke
+}
+#FooterMenu ul {
+	list-style-type: none;
+	padding: 0 1em;
+}
+#FooterMenu ul li {
+    padding: 0.25em 1em;
+}
+
+/*///////////////////////////////////////*/
+/* FORMULARIO */
+/*///////////////////////////////////////*/
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input, textarea, select {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+    color: white;
+    font-weight: bold;
+}
