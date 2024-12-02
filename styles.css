@@ -159,24 +159,17 @@ footer div nav ul li a img {
 /* FORMULARIO */
 /*///////////////////////////////////////*/
 
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 label {
     display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
+    margin: 5px 0 5px;
+    font-weight: lighter;
 }
-input, textarea, select {
-    width: 96%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+input, textarea {
+    width:60%;
+    padding: 3px;
+    margin-bottom: 3px;
+    border: 0 solid #555;
+    background-color: #ddd;
     border-radius: 4px;
 }
 input[type="submit"] {
