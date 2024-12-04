@@ -4,7 +4,7 @@
 body {
     font-family: Dubai light, sans-serif;
     background-color: whitesmoke;
-    line-height: 2em;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
@@ -21,6 +21,7 @@ header{
     padding: 1px 3em 1px 2em;
 }
 header h1 {
+    font-size: 2em;
     text-align: left;
     color: black;
     font-weight: bold;
@@ -48,61 +49,135 @@ header nav ul {
 /* MAIN */
 /*///////////////////////////////////////*/
 
-main {
+/*main {
     padding: 2px 3em 2em 3.5em;
 }
 main div {
     display: inline;
     justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-}
+/*}*/
 main div img {
-    width: 300px;
-    height: 303px;
+    max-width: 300px;
+    max-height: 303px;
     padding: 0 1em 0 2em;
     float: right;
-    border-radius: 160px;
+    border-radius: 80px;
 }
-main section ul {
-    list-style-type: circle;
-    font-size:x-large;
+.hobbies ul {
+    list-style-type: none;
+    font-size: large;
+    font-style: italic;
     padding: 0 1em;
+    height: 5px;
     }
-main section ol {
-    font-size:x-large;
+.pendientes ol {
+    font-size: large;
+    font-style: oblique;  
     padding: 0 1em;
 }
 h2 {
-    font-size:xx-large;
+    font-size: 1.5em;
+    margin: 0;
     padding: 0
+}
+#h2footer {
+    font-size: 1.7em;    
 }
 p {
     text-align: left;
     font-size:x-large;
-    line-height: 1.3em;
     padding: 0 20px 0 0;
 }
 
-table {
+.hobbies table {
+    border-collapse: separate;
+    width: 100%;
+}
+.hobbies td {
+    border: 1px solid black;
+    width: 80%;
+    padding: 0;
+    text-align: left;
+}
+
+.agenda table {
     border-collapse: collapse;
     width: 100%;
 }
-th, td {
+.agenda th, td {
     border: 1px solid black;
     width: 16.66%;
-    height: 10px;
+    height: 5px;
     padding: 0;
     text-align: center;
 }
-thead {
+.agenda thead {
     font-size: large;
 }
-tbody tr td ul {
+.agenda tbody tr td {
     list-style-type: none;
     font-size: medium;
+    text-align: center;
 }
-th {
+.agenda th {
     background-color:#ddd;
 }
+
+/*SECCIONES*/
+.inicio {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px 0 #ebfc01;
+}
+
+.acerca-de {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #e02424;
+}
+
+.hobbies {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #1034fc;
+}
+
+.pendientes {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #f77d03;
+}
+
+.agenda {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #5a22dd;
+}
+
+.formulario {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #15f700;
+}
+
 
 /*///////////////////////////////////////*/
 /* FOOTER */
@@ -113,22 +188,30 @@ footer {
     color: black;
     text-align: left;
     font-weight: bold;
-    padding: 10px 3em 1px 3em;
-}
-footer h2 { 
-    margin: 0;
-}
-footer h4 {
-    margin: 0;
+    /*padding: 0;*/
+    width:100%;
+    overflow:auto;
 }
 footer div {
-    display: flex; /* Hace que los elementos hijos se dispongan en línea */
+    /*display: inline-block; /* Hace que los elementos hijos se dispongan en línea */
     justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    width:50%;
+    float: left;
 }
 footer div nav ul li a img {
     width: 40px;
     height: 40px;
     padding: 0 0 0 0.25em;
+}
+
+#Copyright h4,h2 {
+    padding: 0 0 0 1.9em;
+}
+#Copyright h2,h4 {
+    padding: 0 0 0 3.5em;
+}
+#SocialMedia {
+    padding-left: 3em;
 }
 #SocialMedia ul li {
 	display: inline;
@@ -138,7 +221,7 @@ footer div nav ul li a img {
 	padding: 0;
 }
 #FooterMenu {
-    float: right
+    float: right; 
 }
 #FooterMenu ul li a {
     display: block;
@@ -169,12 +252,12 @@ label {
     font-weight: lighter;
 }
 input, textarea {
-    width:60%;
+    width:99%;
     padding: 3px;
     margin-bottom: 3px;
     border: 0 solid #555;
     background-color: #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 input[type="submit"] {
     background-color: #f0f0f0;

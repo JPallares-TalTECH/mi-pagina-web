@@ -8,34 +8,30 @@
 </head>
 <body>
     <header> 
-        <h1 id="HOME"> Portafolio personal | JONATAN PALLARES </h1>
-        <nav>
-            <ul>
-                <li><a href="#HOME">INICIO</a></li>
-                <li><a href="#ABOUT">ACERCA DE</a></li>
-                <li><a href="#PASATIEMPOS">PASATIEMPOS</a></li>
-                <li><a href="#TAREAS">TAREAS</a></li>
-                <li><a href="#CONTACTO">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <div class="encabezado">
+            <h1 id="HOME"> Portafolio personal | JONATAN PALLARES </h1>
+            <nav>
+                <ul>
+                    <li><a href="#HOME">INICIO</a></li>
+                    <li><a href="#ABOUT">ACERCA DE</a></li>
+                    <li><a href="#PASATIEMPOS">PASATIEMPOS</a></li>
+                    <li><a href="#TAREAS">TAREAS</a></li>
+                    <li><a href="#CONTACTO">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <nav>
-                <div>
-                    <img src="./img/foto.png"  alt="Esta es mi foto de perfil">
-                </div>
-                <div>
-                    <p> 
-                        Técnico de soporte de tecnología en sitio con mas de 15 años de experiencia dando soporte a usuarios finales en sus puestos de trabajo para varios proyectos. Soporte de manos remotas para grupos de soporte de servidores y administración de activos tecnológicos para grupos de logística. con plena disposición para hacer trabajo en equipo.
-                    </p>
-                </div>
-            </nav>
+        <div class="inicio">
+            <img src="./img/foto.png"  alt="Esta es mi foto de perfil">
+            <p> 
+                Técnico de soporte de tecnología en sitio con mas de 15 años de experiencia dando soporte a usuarios finales en sus puestos de trabajo para varios proyectos. Soporte de manos remotas para grupos de soporte de servidores y administración de activos tecnológicos para grupos de logística. con plena disposición para hacer trabajo en equipo.
+            </p>
             <p>
                 Nacido en la estrella de La Guajira, el municipio de Distracción en el departamento de La Guajira, en el año de 1977. Presté el servicio militar en 1995 en el Batallón de infantería mecanizada #6 Cartagena en la ciudad de Riohacha, luego viví un tiempo en la ciudad de Bucaramanga. Finalmente terminé radicandome en la ciudad de Valledupar. 
             </p>
-        </section>
-        <section>
+        </div>
+        <div class="acerca-de">
             <h2 id="ABOUT"> ACERCA DE </h2>
             <p>
                 Actualmente laboro como ingeniero de soporte al usuario final de una empresa del área de soporte tecnológico para varios proyectos incluyendo el soporte de manos remotas para el área de servidores y apoyo a los grupos de logistica en algunos de estos proyectos.
@@ -46,17 +42,25 @@
             <p>                
                 <strong>TBT</strong> - Experiencia como jefe de operaciones en una planta distribuidora de Gas Licuado de Petróleo (G.L.P.); recepción y trasiego de los camiones cisterna con el G.L.P. y despacho de este a los contratistas encargados de su comercialización. Supervisor del área de llenado de los cilindros y responsable del inventario de estos mismos,
             </p>
-        </section>
-        <section>
+        </div>
+        <div class="hobbies">
             <h2 id="PASATIEMPOS"> PASATIEMPOS </h2>
-            <ul>
-                <li> Ver videos de Ciencias, sobre todo Fisica y AstroFisica </li>
-                <li> Hacer telescopios caseros con lupas, lentes de opticas, espejos y tubos de cartón y PVC </li>
-                <li> Ver videos de programación, diseño de Bases de Datos y temas afines al desarrollo de aplicaciones </li>
-            </ul>
-        </section>
-        <section>
-            <h2 id="TAREAS"> TAREAS </h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><ul><li> Ver videos de Ciencias, sobre todo Fisica y AstroFisica </li></ul></td>
+                    </tr>
+                    <tr>
+                        <td><ul><li> Hacer telescopios caseros con lupas, lentes de opticas, espejos y tubos de cartón y PVC </li></ul></td>
+                    </tr>
+                    <tr>
+                        <td><ul><li> AVer videos de programación, diseño de Bases de Datos y temas afines al desarrollo de aplicaciones </li></ul></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pendientes">
+            <h2 id="TAREAS PENDIENTES"> TAREAS </h2>
             <ol>
                 <li> Sacar la basura </li>
                 <li> Asear la casa </li>
@@ -64,6 +68,8 @@
                 <li> Lavar la ropa </li>
                 <li> Lavar la cocina </li>
             </ol>
+        </div>
+        <div class="agenda">
             <h2>Mi Planificador Semanal</h2>
             <table>
                 <thead>
@@ -119,20 +125,18 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
 
-        <div>
+        <div class="formulario">
                 <h2 id="CONTACTO"> CONTACTO </h2>
                 <p> Déjame tus datos y estaré contactándote en breve </p>
                 <form action="#" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" maxlength="600" required></textarea>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre: " required>
 
-                    <label for="email" value="Mensaje">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <textarea id="mensaje" name="mensaje" rows="4" maxlength="600" placeholder="Mensaje: " required></textarea>
+
+                    <input type="email" id="email" name="email" placeholder="Correo electronico" required>
                     
                     <input type="submit" value="Enviar">
                 </form>
@@ -141,11 +145,12 @@
     </main>
     <footer>
         <div>
-            <section>
-                <p>
-                    <h2> JONATAN PALLARES </h2>
+<!-- Comentario -->
+                <p id="Copyright">
+                    <h2 id="h2footer"> JONATAN PALLARES </h2>
                     <H4> Copyright &copy; 2024 @SoyJPallares </H4>
-                </p>        
+                </p>
+<!-- Comentario -->
                 <nav id="SocialMedia">
                     <ul>
                         <li><a href="https://www.facebook.com/SoyJPallares/" target="_blank" rel="noopener" title="Ir a la página de Facebook"><img src="./img/facebook-removebg-preview.png" alt="Enlace a mi página de Facebook"></a></li>
@@ -154,8 +159,9 @@
                         <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" title="Ir a la página de Youtube"><img src="./img/youtube-removebg-preview.png"  alt="Enlace al sitio de YouTube"></a></li>
                     </ul>
                 </nav>
-            </section>
-            <section >
+        </div>
+<!-- Comentario -->
+        <div>
                 <nav id="FooterMenu">
                     <ul>
                         <li><a href="#HOME">INICIO</a></li>
@@ -165,7 +171,6 @@
                         <li><a href="#CONTACTO">CONTACTO</a></li>
                     </ul>
                 </nav>
-            </section>
         </div>
     </footer>
 </body>
