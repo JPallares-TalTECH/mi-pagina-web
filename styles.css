@@ -111,6 +111,14 @@ p {
     padding: 0;
     text-align: center;
 }
+.agenda td, th {
+    border: 1px solid black;
+    width: 16.66%;
+    height: 5px;
+    padding: 0;
+    text-align: center;
+}
+
 .agenda thead {
     font-size: large;
 }
@@ -120,7 +128,7 @@ p {
     text-align: center;
 }
 .agenda th {
-    background-color:#ddd;
+    background-color:#5a22dd81;
 }
 
 /*SECCIONES*/
