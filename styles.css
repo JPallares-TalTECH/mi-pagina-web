@@ -14,8 +14,8 @@ body {
 /*///////////////////////////////////////*/
 
 header{
-    background-color: #ddd;
-    color: black;
+    background-color: #000000;
+    color: #ffffff;
     text-align: left;
     font-weight: bold;
     padding: 1px 3em 1px 2em;
@@ -23,12 +23,12 @@ header{
 header h1 {
     font-size: 2em;
     text-align: left;
-    color: black;
+    color: whitesmoke;
     font-weight: bold;
     padding-left: 1em;
 }
 header nav ul li a {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     padding: 0.5em 1em;
 }
@@ -49,14 +49,7 @@ header nav ul {
 /* MAIN */
 /*///////////////////////////////////////*/
 
-/*main {
-    padding: 2px 3em 2em 3.5em;
-}
-main div {
-    display: inline;
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-/*}*/
-main div img {
+.inicio img {
     max-width: 300px;
     max-height: 303px;
     padding: 0 1em 0 2em;
@@ -65,13 +58,14 @@ main div img {
 }
 .hobbies ul {
     list-style-type:circle;
-    font-size: large;
+    font-size: x-large;
     font-style: italic;
     }
 .pendientes ol {
     font-size: large;
     font-style: oblique;  
     padding: 0 1em;
+    font-size: x-large;
 }
 h2 {
     font-size: 1.5em;
@@ -97,21 +91,14 @@ p {
     padding: 0;
     text-align: center;
 }
-.agenda td, th {
-    border: 1px solid black;
-    width: 16.66%;
-    height: 5px;
-    padding: 0;
-    text-align: center;
-}
-
 .agenda thead {
     font-size: large;
 }
-.agenda tbody tr td {
+.agenda tbody tr td ul {
     list-style-type: none;
-    font-size: medium;
+    font-size: large;
     text-align: center;
+    padding: 0;
 }
 .agenda th {
     background-color:#5a22dd81;
@@ -178,16 +165,14 @@ p {
 /*///////////////////////////////////////*/
 
 footer {
-    background-color: #ddd;
-    color: black;
+    background-color: black;
+    color: whitesmoke;
     text-align: left;
     font-weight: bold;
-    /*padding: 0;*/
     width:100%;
     overflow:auto;
 }
 footer div {
-    /*display: inline-block; /* Hace que los elementos hijos se dispongan en línea */
     justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
     width:50%;
     float: left;
@@ -219,7 +204,7 @@ footer div nav ul li a img {
 }
 #FooterMenu ul li a {
     display: block;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     padding: 0.2em 1em;
 }
