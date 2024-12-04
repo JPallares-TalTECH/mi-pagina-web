@@ -236,7 +236,7 @@ input, textarea {
     margin-bottom: 3px;
     border: 0 solid #555;
     background-color: #ddd;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 input[type="submit"] {
     background-color: #f0f0f0;
