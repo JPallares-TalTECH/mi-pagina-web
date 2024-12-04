@@ -64,11 +64,9 @@ main div img {
     border-radius: 80px;
 }
 .hobbies ul {
-    list-style-type: none;
+    list-style-type:circle;
     font-size: large;
     font-style: italic;
-    padding: 0 1em;
-    height: 5px;
     }
 .pendientes ol {
     font-size: large;
@@ -88,18 +86,6 @@ p {
     font-size:x-large;
     padding: 0 20px 0 0;
 }
-
-.hobbies table {
-    border-collapse: separate;
-    width: 100%;
-}
-.hobbies td {
-    border: 1px solid black;
-    width: 80%;
-    padding: 0;
-    text-align: left;
-}
-
 .agenda table {
     border-collapse: collapse;
     width: 100%;
