@@ -4,6 +4,7 @@
 body {
     font-family: Dubai light, sans-serif;
     background-color: whitesmoke;
+    line-height: 2em;
     margin: 0;
     padding: 0;
 }
@@ -59,6 +60,7 @@ main div img {
     height: 303px;
     padding: 0 1em 0 2em;
     float: right;
+    border-radius: 160px;
 }
 main section ul {
     list-style-type: circle;
@@ -69,13 +71,14 @@ main section ol {
     font-size:x-large;
     padding: 0 1em;
 }
-    h2 {
+h2 {
     font-size:xx-large;
     padding: 0
 }
 p {
-    text-align: justify;
+    text-align: left;
     font-size:x-large;
+    line-height: 1.3em;
     padding: 0 20px 0 0;
 }
 
@@ -161,7 +164,8 @@ footer div nav ul li a img {
 
 label {
     display: block;
-    margin: 5px 0 5px;
+    line-height: 1em;
+    margin: 3px 0 0;
     font-weight: lighter;
 }
 input, textarea {
