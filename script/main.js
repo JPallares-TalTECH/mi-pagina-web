@@ -7,9 +7,9 @@ form.addEventListener("submit", (event) => {
     const msj = document.getElementById('mensaje').value;
     const mail = document.getElementById('email').value;
 
-    console.log("Nombre:", nomb);
-    console.log("Mensaje:", mens);
+    console.log("Nombre:", nom);
+    console.log("Mensaje:", msj);
     console.log("Correo electronico:", mail);
 
-    alert("Hola " + nom + ", su correo es " + mail + " y su motivo de contacto es: \n" + msj + "\n\n\nEn breve estaré poniendome en contacto contigo para dar gestión a lo que me comentas.");
+    alert("Hola " + nom + ", tu correo es " + mail + " y el motivo de tu contacto es: \n" + msj + "\n\nYa he recibido tu mensaje y en breve estaré poniendome en contacto contigo para dar respuesta a tu comentario.");
 });
