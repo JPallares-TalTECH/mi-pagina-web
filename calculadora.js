@@ -40,7 +40,7 @@
                 resultado=realizarOperacion(num1,num2,operacion);
             }
             console.log("El resultado es: "+resultado);
-            document.write("El resultado es: "+resultado);
+            document.write("El resultado es: "+resultado+"<br>");
             //Se convierte la respuesta a minuscula y se condiciona la respuesta a 'si' o 'no' para controlar salidas no deseadas
             pregunta = prompt("Desea realizar otra operacion? ").toLowerCase();
 
@@ -56,6 +56,7 @@
             }
             else {
                 console.log("Por favor responda 'si' o 'no'");
+                document.write("Por favor responda 'si' o 'no' o escriba 'salir' cuando se le solicite la operación a realizar <br><br>")
                 continue
             }
         }
